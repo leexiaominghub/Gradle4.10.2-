@@ -40,11 +40,11 @@ version = '1.2.1'
 
 通过应用Java插件，您可以获得许多功能：
 
-- 一`compileJava`，编译下的所有Java源文件任务*的src / main / JAVA*
-- 一`compileTestJava`对在源文件任务*的src / test / java下*
-- 一个`test`运行从测试任务*的src / test / java下*
-- 将来自*src / main / resources*`jar`的已`main`编译类和资源打包到名为*- .jar*的单个JAR中的任务
-- `javadoc`为`main`类生成Javadoc的任务
+- `compileJava`任务，编译下*src / main / JAVA*的所有Java源文件
+- `compileTestJava`任务，对应*src / test / java下*源文件
+- `test`任务，运行*src / test / java下*测试
+- `jar`任务，将来自*src / main / resources*的资源和`main`包的编译类打包到名为的单个JAR中
+- `javadoc`任务，为`main`类生成Javadoc的
 
 这还不足以构建任何重要的Java项目-至少，您可能会有一些文件依赖性。但它意味着你的构建脚本只需要特定于信息*的*项目。
 
